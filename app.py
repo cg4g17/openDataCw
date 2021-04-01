@@ -192,8 +192,9 @@ def responses():
 
 @app.route("/api/ttl")
 def ttl():
-    with open('triples.ttl') as f:
-        return f.read()
+    with open('triples.ttl', 'r') as f:
+        content = f.read()
+    return Response(content, mimetype='text/plain')    
         
 
 
