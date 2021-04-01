@@ -7,11 +7,14 @@ from rdflib.namespace import FOAF, XSD, RDFS  # most common namespaces
 app = Flask(__name__,
             static_folder='client/build', static_url_path='')
 
+cors = CORS(app)
+
 g = Graph()
 g.parse('triples.ttl', format='turtle')
 
 
 @app.route("/api/industries")
+@cross_origin()
 def industries():
     getIndustries = """
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -28,6 +31,7 @@ def industries():
 
 
 @app.route("/api/countries")
+@cross_origin()
 def countries():
     getCountries = """
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -44,6 +48,7 @@ def countries():
 
 
 @app.route("/api/sizes")
+@cross_origin()
 def sizes():
     getSizes = """
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -60,6 +65,7 @@ def sizes():
 
 
 @app.route("/api/applied")
+@cross_origin()
 def applied():
     scheme = request.args.get('scheme')
     filter = request.args.get('filter')
@@ -86,6 +92,7 @@ def applied():
 
 
 @app.route("/api/received")
+@cross_origin()
 def received():
     scheme = request.args.get('scheme')
     filter = request.args.get('filter')
@@ -112,6 +119,7 @@ def received():
 
 
 @app.route("/api/intending")
+@cross_origin()
 def intending():
     scheme = request.args.get('scheme')
     filter = request.args.get('filter')
@@ -138,6 +146,7 @@ def intending():
 
 
 @app.route("/api/trading")
+@cross_origin()
 def trading():
     status = request.args.get('status')
     filter = request.args.get('filter')
@@ -163,6 +172,7 @@ def trading():
 
 
 @app.route("/api/responses")
+@cross_origin()
 def responses():
     size = request.args.get('size')
     filter = request.args.get('filter')
@@ -189,4 +199,4 @@ def responses():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
