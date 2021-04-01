@@ -1,4 +1,4 @@
-from flask import (Flask, render_template, request, jsonify, send_from_directory)
+from flask import (Flask, render_template, request, jsonify, send_from_directory, Response)
 from rdflib import Graph, Literal, RDF, URIRef, Namespace, BNode  # basic RDF handling
 from rdflib.namespace import FOAF, XSD, RDFS  # most common namespaces
 
