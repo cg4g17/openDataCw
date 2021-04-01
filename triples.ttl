@@ -1,0 +1,2045 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://example.org/Country/> a rdfs:Class .
+
+<http://example.org/Industry/> a rdfs:Class .
+
+<http://example.org/Responses/> a rdfs:Class .
+
+<http://example.org/Scheme/> a rdfs:Class .
+
+<http://example.org/Size/> a rdfs:Class .
+
+<http://example.org/Trading/> a rdfs:Class .
+
+<http://example.org/applied/> rdf:Property <http://example.org/Scheme/> ;
+    rdf:value "applied" .
+
+<http://example.org/continues/> rdf:Property <http://example.org/Trading/> ;
+    rdf:value "continues" .
+
+<http://example.org/intending/> rdf:Property <http://example.org/Scheme/> ;
+    rdf:value "intending" .
+
+<http://example.org/proportion/> rdf:Property <http://example.org/Responses/> ;
+    rdf:value "proportionOfResponses" .
+
+<http://example.org/received/> rdf:Property <http://example.org/Scheme/> ;
+    rdf:value "received" .
+
+<http://example.org/sample/> rdf:Property <http://example.org/Responses/> ;
+    rdf:value "sampleSize" .
+
+<http://example.org/stopped/> rdf:Property <http://example.org/Trading/> ;
+    rdf:value "stopped" .
+
+<http://example.org/temp/> rdf:Property <http://example.org/Trading/> ;
+    rdf:value "temporarily stopped" .
+
+<http://example.org/Country/England> <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/England> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "27.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/England> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "67.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/England> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "9.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/England> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "20.50%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/England> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "22.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/England> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "10.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/England> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "57.30%" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Country/England> ;
+            rdf:value "77.8%" ] ;
+    <http://example.org/stopped/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Country/England> ;
+            rdf:value "*" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Country/England> ;
+            rdf:value "21.8%" ] .
+
+<http://example.org/Country/Northern%20Ireland> <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/Northern%20Ireland> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "13.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/Northern%20Ireland> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "30.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/Northern%20Ireland> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "23.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/Northern%20Ireland> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "10.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/Northern%20Ireland> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "40.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/Northern%20Ireland> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "6.50%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/Northern%20Ireland> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "65.20%" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Country/Northern%20Ireland> ;
+            rdf:value "72.8%" ] ;
+    <http://example.org/stopped/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Country/Northern%20Ireland> ;
+            rdf:value "*" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Country/Northern%20Ireland> ;
+            rdf:value "27.2%" ] .
+
+<http://example.org/Country/Scotland> <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/Scotland> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "9.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/Scotland> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "23.50%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/Scotland> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "7.50%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/Scotland> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "16.50%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/Scotland> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "71.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/Scotland> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "29.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/Scotland> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "63.00%" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Country/Scotland> ;
+            rdf:value "77.6%" ] ;
+    <http://example.org/stopped/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Country/Scotland> ;
+            rdf:value "*" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Country/Scotland> ;
+            rdf:value "21.7%" ] .
+
+<http://example.org/Country/UK> <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/UK> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "20.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/UK> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "27.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/UK> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "22.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/UK> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "11.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/UK> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "9.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/UK> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "67.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/UK> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "56.40%" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Country/UK> ;
+            rdf:value "76.7%" ] ;
+    <http://example.org/stopped/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Country/UK> ;
+            rdf:value "*" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Country/UK> ;
+            rdf:value "22.8%" ] .
+
+<http://example.org/Country/Wales> <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/Wales> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "13.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/Wales> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "38.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/Wales> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "12.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/Wales> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "13.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/Wales> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "65.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/Wales> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "73.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/country/> <http://example.org/Country/Wales> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "25.50%" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Country/Wales> ;
+            rdf:value "76.2%" ] ;
+    <http://example.org/stopped/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Country/Wales> ;
+            rdf:value "1.1%" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/country/> <http://example.org/Country/Wales> ;
+            rdf:value "22.7%" ] .
+
+<http://example.org/Size/250%20minus> <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "27.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "68.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "22.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "13.50%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "56.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "19.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "11.20%" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "74.80%" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "20.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "36.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "9.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "4.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "8.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "48.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "8.50%" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "8.50%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "22.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "18.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "16.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "2.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "40.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "20.50%" ] ;
+    <http://example.org/stopped/> [ a <http://example.org/Trading/> ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "*" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/size/> <http://example.org/Size/250%20minus> ;
+            rdf:value "24.70%" ] .
+
+<http://example.org/Size/250%20plus> <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "7.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "27.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "22.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "64.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "57.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "22.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "7.90%" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "79.80%" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "2.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "16.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "7.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "9.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "7.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "37.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "48.60%" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "22.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "20.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "4.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "46.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "1.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "16.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "16.80%" ] ;
+    <http://example.org/stopped/> [ a <http://example.org/Trading/> ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "*" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/size/> <http://example.org/Size/250%20plus> ;
+            rdf:value "19.70%" ] .
+
+<http://example.org/Size/All%20Size%20Bands> <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "22.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "27.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "56.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "9.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "20.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "11.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "67.20%" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "76.70%" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "3.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "9.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "48.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "8.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "8.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "36.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "19.00%" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "22.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "19.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "16.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "1.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "42.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "7.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "18.90%" ] ;
+    <http://example.org/stopped/> [ a <http://example.org/Trading/> ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "*" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/size/> <http://example.org/Size/All%20Size%20Bands> ;
+            rdf:value "22.80%" ] .
+
+<http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "78.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "2.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "24.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "42.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "87.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "20.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "80.60%" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            rdf:value "18.2%" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "13.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "23.50%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "6.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "39.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "12.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "18.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "40.40%" ] ;
+    <http://example.org/proportion/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "31.60%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "29.60%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "32.90%" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "25.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "30.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "59.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "12.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "63.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "3.50%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "17.80%" ] ;
+    <http://example.org/sample/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "321" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "195" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "516" ] ;
+    <http://example.org/stopped/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            rdf:value "1.2%" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Accommodation%20And%20Food%20Service%20Activities> ;
+            rdf:value "80.6%" ] .
+
+<http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "63.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "12.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "21.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "20.50%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "20.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "75.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "13.90%" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            rdf:value "91.5%" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "22.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "6.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "40.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "10.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "8.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "9.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "45.00%" ] ;
+    <http://example.org/proportion/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "35.20%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "33.70%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "34.50%" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "14.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "12.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "20.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "1.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "14.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "46.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "28.00%" ] ;
+    <http://example.org/sample/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "453" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "361" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "814" ] ;
+    <http://example.org/stopped/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            rdf:value "*" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Administrative%20And%20Support%20Service%20Activities> ;
+            rdf:value "8.1%" ] .
+
+<http://example.org/Industry/All%20Industries> <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "56.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "67.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "20.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "22.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "27.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "9.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "11.20%" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            rdf:value "76.7%" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "19.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "3.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "8.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "8.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "9.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "48.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "36.80%" ] ;
+    <http://example.org/proportion/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "32.10%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "36.50%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "34.70%" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "42.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "1.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "22.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "16.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "19.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "7.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "18.90%" ] ;
+    <http://example.org/sample/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "2305" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "6114" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "3809" ] ;
+    <http://example.org/stopped/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            rdf:value "*" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/All%20Industries> ;
+            rdf:value "22.8%" ] .
+
+<http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "18.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "33.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "18.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "12.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "61.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "76.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "57.20%" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            rdf:value "20.5%" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "10.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "39.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "21.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "5.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "41.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "10.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "12.20%" ] ;
+    <http://example.org/proportion/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "32.30%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "38.70%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "43.40%" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "43.50%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "10.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "4.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "45.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "25.50%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "21.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "17.60%" ] ;
+    <http://example.org/sample/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "98" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "180" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "278" ] ;
+    <http://example.org/stopped/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            rdf:value "*" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Arts%2C%20Entertainment%20And%20Recreation> ;
+            rdf:value "79.5%" ] .
+
+<http://example.org/Industry/Construction> <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "9.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "6.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "28.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "11.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "59.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "80.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "13.50%" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            rdf:value "73.2%" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "5.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "9.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "42.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "11.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "3.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "42.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "17.40%" ] ;
+    <http://example.org/proportion/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "24.40%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "28.80%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "27.50%" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "2.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "44.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "1.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "27.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "5.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "29.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "23.40%" ] ;
+    <http://example.org/sample/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "76" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "208" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "284" ] ;
+    <http://example.org/stopped/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            rdf:value "*" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Construction> ;
+            rdf:value "26.1%" ] .
+
+<http://example.org/Industry/Education> <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "26.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "48.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "7.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "2.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "8.50%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "2.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "40.50%" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            rdf:value "86.8%" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "9.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "6.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "*" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "42.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "2.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "17.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "45.90%" ] ;
+    <http://example.org/proportion/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "41.80%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "41.80%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "41.90%" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "*" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "3.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "*" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "9.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "22.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "5.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "18.40%" ] ;
+    <http://example.org/sample/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "127" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "318" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "191" ] ;
+    <http://example.org/stopped/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            rdf:value "*" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Education> ;
+            rdf:value "12.6%" ] .
+
+<http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "6.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "10.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "13.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "55.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "2.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "16.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "34.50%" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            rdf:value "93.8%" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "31.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "1.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "3.50%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "9.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "4.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "5.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "58.50%" ] ;
+    <http://example.org/proportion/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "58.60%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "39.60%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "49.00%" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "8.50%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "7.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "4.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "15.50%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "14.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "*" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "9.20%" ] ;
+    <http://example.org/sample/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "59" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "85" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "144" ] ;
+    <http://example.org/stopped/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            rdf:value "1.4%" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Human%20Health%20And%20Social%20Work%20Activities> ;
+            rdf:value "4.9%" ] .
+
+<http://example.org/Industry/Information%20And%20Communication> <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "3.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "8.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "13.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "40.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "47.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "37.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "3.80%" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            rdf:value "95.0%" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "5.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "7.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "6.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "16.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "26.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "58.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "2.90%" ] ;
+    <http://example.org/proportion/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "34.40%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "28.70%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "37.40%" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "1.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "15.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "10.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "3.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "39.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "12.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "1.00%" ] ;
+    <http://example.org/sample/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "418" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "297" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "121" ] ;
+    <http://example.org/stopped/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            rdf:value "*" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Information%20And%20Communication> ;
+            rdf:value "4.5%" ] .
+
+<http://example.org/Industry/Manufacturing> <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "44.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "8.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "14.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "63.50%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "4.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "26.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "19.30%" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            rdf:value "79.0%" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "8.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "6.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "48.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "16.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "38.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "2.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "9.20%" ] ;
+    <http://example.org/proportion/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "32.80%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "34.80%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "36.30%" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "23.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "1.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "19.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "2.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "14.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "7.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "33.00%" ] ;
+    <http://example.org/sample/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "1097" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "449" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "648" ] ;
+    <http://example.org/stopped/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            rdf:value "*" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Manufacturing> ;
+            rdf:value "20.6%" ] .
+
+<http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "18.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "20.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "4.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "8.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "66.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "12.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "62.20%" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            rdf:value "96.7%" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "8.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "7.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "7.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "2.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "22.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "35.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "50.30%" ] ;
+    <http://example.org/proportion/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "36.20%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "36.80%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "35.90%" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "2.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "51.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "17.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "21.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "2.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "7.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "14.60%" ] ;
+    <http://example.org/sample/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "468" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "733" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "265" ] ;
+    <http://example.org/stopped/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            rdf:value "*" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Professional%2C%20Scientific%20And%20Technical%20Activities> ;
+            rdf:value "3.0%" ] .
+
+<http://example.org/Industry/Transportation%20And%20Storage> <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "6.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "9.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "24.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "76.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "55.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "16.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "24.10%" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            rdf:value "91.5%" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "2.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "19.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "48.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "35.50%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "7.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "9.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "7.80%" ] ;
+    <http://example.org/proportion/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "36.60%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "26.60%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "32.70%" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "18.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "28.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "44.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "2.50%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "14.50%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "18.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "2.50%" ] ;
+    <http://example.org/sample/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "193" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "89" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "282" ] ;
+    <http://example.org/stopped/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            rdf:value "*" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Transportation%20And%20Storage> ;
+            rdf:value "8.5%" ] .
+
+<http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "21.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "5.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "10.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "57.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "68.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "21.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "15.70%" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            rdf:value "90.0%" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "14.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "38.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "2.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "7.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "22.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "45.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "7.10%" ] ;
+    <http://example.org/proportion/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "34.80%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "28.20%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "38.50%" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "15.70%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "24.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "4.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "37.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "28.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "1.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "4.30%" ] ;
+    <http://example.org/sample/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "70" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "50" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "20" ] ;
+    <http://example.org/stopped/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            rdf:value "*" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Water%20Supply%2C%20Sewerage%2C%20Waste%20Management%20And%20Remediation%20Activities> ;
+            rdf:value "10.0%" ] .
+
+<http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> <http://example.org/applied/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "60.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "44.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "13.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "15.50%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "72.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "25.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "9.00%" ] ;
+    <http://example.org/continues/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            rdf:value "75.2%" ] ;
+    <http://example.org/intending/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "8.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "53.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "15.80%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "7.60%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "4.20%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "9.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "32.10%" ] ;
+    <http://example.org/proportion/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "29.20%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "34.30%" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "37.70%" ] ;
+    <http://example.org/received/> [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "Government-funded small business grant or loan schemes"@en ;
+            rdf:value "9.10%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "Deferring VAT payments"@en ;
+            rdf:value "46.90%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "HMRC Time To Pay scheme"@en ;
+            rdf:value "18.30%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "No Scheme"@en ;
+            rdf:value "16.00%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "Accredited finance agreements"@en ;
+            rdf:value "1.50%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "Business rates holiday"@en ;
+            rdf:value "33.40%" ],
+        [ a <http://example.org/Scheme/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "Coronavirus Job Retention Scheme"@en ;
+            rdf:value "23.90%" ] ;
+    <http://example.org/sample/> [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "Workforce Size 250 +"@en ;
+            rdf:value "344" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "Total"@en ;
+            rdf:value "1030" ],
+        [ a <http://example.org/Responses/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            <http://example.org/name/> "Workforce Size < 250"@en ;
+            rdf:value "686" ] ;
+    <http://example.org/stopped/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            rdf:value "*" ] ;
+    <http://example.org/temp/> [ a <http://example.org/Trading/> ;
+            <http://example.org/industry/> <http://example.org/Industry/Wholesale%20And%20Retail%20Trade%3B%20Repair%20Of%20Motor%20Vehicles%20And%20Motorcycles> ;
+            rdf:value "24.3%" ] .
+
