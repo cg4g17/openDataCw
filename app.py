@@ -1,4 +1,4 @@
-from flask import (Flask, render_template, request, jsonify)
+from flask import (Flask, render_template, request, jsonify, send_from_directory)
 from rdflib import Graph, Literal, RDF, URIRef, Namespace, BNode  # basic RDF handling
 from rdflib.namespace import FOAF, XSD, RDFS  # most common namespaces
 
@@ -13,7 +13,7 @@ g.parse('triples.ttl', format='turtle')
 @app.route("/", defaults={'path':''})
 def serve(path):
     return send_from_directory(app.static_folder,'index.html')
-    
+
 @app.route("/api/industries")
 def industries():
     getIndustries = """
