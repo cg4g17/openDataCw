@@ -190,6 +190,12 @@ def responses():
         toPass.append((row.s, row.value))
     return jsonify(toPass)
 
+@app.route("/api/ttl")
+def ttl():
+    with open('triples.ttl') as f:
+        return f.read()
+        
+
 
 if __name__ == '__main__':
     app.run()
