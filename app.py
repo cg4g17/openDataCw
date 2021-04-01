@@ -1,6 +1,5 @@
 from flask import (Flask, render_template, request, jsonify)
 from flask_cors import CORS, cross_origin
-import pandas as pd  # for handling csv and csv contents
 from rdflib import Graph, Literal, RDF, URIRef, Namespace, BNode  # basic RDF handling
 from rdflib.namespace import FOAF, XSD, RDFS  # most common namespaces
 
