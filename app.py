@@ -10,6 +10,10 @@ g = Graph()
 g.parse('triples.ttl', format='turtle')
 
 
+@app.route("/", defaults={'path':''})
+def serve(path):
+    return send_from_directory(app.static_folder,'index.html')
+    
 @app.route("/api/industries")
 def industries():
     getIndustries = """
