@@ -6,7 +6,6 @@ from rdflib.namespace import FOAF, XSD, RDFS  # most common namespaces
 
 app = Flask(__name__,
             static_folder='client/build', static_url_path='')
-cors = CORS(app)
 
 g = Graph()
 g.parse('triples.ttl', format='turtle')
